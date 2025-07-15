@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>患者症状確認表 - PsoriasisMed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PsoriasisMed</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hero">ホーム</a></li>
+                    <li><a href="index.html#categories">治療薬</a></li>
+                    <li><a href="index.html#comparison">薬剤比較</a></li>
+                    <li><a href="index.html#search-by-condition">症状確認表</a></li>
+                    <li><a href="index.html#about">サイトについて</a></li>
+                </ul>
+            </nav>
+            <div class="utility-nav">
+                <a href="search.html" class="search-icon">検索</a>
+                <a href="favorites.html" class="favorite-icon">お気に入り</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="patient-profile-filters" class="search-filters-section">
+            <div class="container">
+                <h3>患者症状確認表</h3>
+                <p>患者様の症状、重症度、合併症、既往歴などをチェックして、該当する情報を確認します。</p>
+
+                <div class="filter-group">
+                    <h4>症状</h4>
+                    <div id="symptom-filters" class="filter-options"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>評価指標</h4>
+                    <div id="evaluation-filters" class="filter-options"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>合併症</h4>
+                    <div id="comorbidity-filters" class="filter-options"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h4>増悪・誘発因子</h4>
+                    <div id="trigger-filters" class="filter-options"></div>
+                </div>
+
+                <button id="show-symptoms-button" class="button primary">検索</button>
+            </div>
+        </section>
+
+        <section id="symptom-results" class="search-results-section">
+            <div class="container">
+                <h4>確認結果</h4>
+                <div id="symptom-results-container"></div>
+            </div>
+        </section>
+    <div class="container" style="text-align: center; margin-top: 40px;">
+            <a href="index.html#hero" class="button primary">Topへ戻る</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-logo">PsoriasisMed</div>
+                <div class="footer-nav">
+                    <h4>治療薬</h4>
+                    <ul>
+                        <li><a href="biological_agents.html">生物学的製剤</a></li>
+                        <li><a href="oral_medications.html">内服薬</a></li>
+                        <li><a href="topical_medications.html">外用薬</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>情報</h4>
+                    <ul>
+                        <li><a href="search.html">薬剤検索</a></li>
+                        <li><a href="index.html#comparison">比較機能</a></li>
+                        <li><a href="patient_symptom_checklist.html">患者症状確認表</a></li>
+                        <li><a href="how_to_use.html">使い方</a></li>
+                        <li><a href="index.html#about">サイト情報</a></li>
+                        <li><a href="privacy_policy.html">プライバシーポリシー</a></li>
+                        <li><a href="terms_of_service.html">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 PsoriasisMed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="symptom_data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize symptom checker page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOMContentLoaded fired');
+            console.log('symptomData:', typeof symptomData);
+            
+            // Direct initialization without function check
+            if (typeof symptomData !== 'undefined') {
+                console.log('symptomData available, initializing...');
+                
+                // Create checkboxes for each category
+                createCheckboxes('symptom-filters', symptomData.症状);
+                createCheckboxes('evaluation-filters', symptomData.評価指標);
+                createCheckboxes('comorbidity-filters', symptomData.合併症);
+                createCheckboxes('trigger-filters', symptomData["増悪・誘発因子"]);
+                
+                // Add event listener to the show symptoms button
+                const showSymptomsButton = document.getElementById('show-symptoms-button');
+                if (showSymptomsButton) {
+                    showSymptomsButton.addEventListener('click', displaySelectedSymptoms);
+                    console.log('Event listener added to button');
+                }
+            } else {
+                console.error('symptomData is not defined');
+            }
+        });
+        
+        // Create checkboxes function (inline to ensure it works)
+        function createCheckboxes(containerId, dataArray) {
+            console.log('Creating checkboxes for:', containerId, dataArray);
+            const container = document.getElementById(containerId);
+            if (!container || !dataArray) {
+                console.error('Container or data not found:', containerId, dataArray);
+                return;
+            }
+            
+            container.innerHTML = ''; // Clear existing content
+            
+            dataArray.forEach((item, index) => {
+                const checkboxDiv = document.createElement('div');
+                checkboxDiv.classList.add('filter-checkbox');
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `${containerId}-${index}`;
+                checkbox.value = typeof item === 'string' ? item : item.term;
+                
+                const label = document.createElement('label');
+                label.htmlFor = checkbox.id;
+                label.textContent = typeof item === 'string' ? item : item.term;
+                
+                checkboxDiv.appendChild(checkbox);
+                checkboxDiv.appendChild(label);
+                container.appendChild(checkboxDiv);
+            });
+            
+            console.log('Checkboxes created for:', containerId, dataArray.length, 'items');
+        }
+        
+        // Display selected symptoms function (inline)
+        function displaySelectedSymptoms() {
+            console.log('displaySelectedSymptoms called');
+            const resultsContainer = document.getElementById('symptom-results-container');
+            if (!resultsContainer) {
+                console.error('Results container not found');
+                return;
+            }
+
+            const getSelectedItems = (containerId) => {
+                return Array.from(document.querySelectorAll(`#${containerId} input[type="checkbox"]:checked`))
+                            .map(checkbox => checkbox.value);
+            };
+
+            const selectedSymptoms = getSelectedItems('symptom-filters');
+            const selectedEvaluation = getSelectedItems('evaluation-filters');
+            const selectedComorbidities = getSelectedItems('comorbidity-filters');
+            const selectedTriggers = getSelectedItems('trigger-filters');
+
+            console.log('Selected items:', {
+                symptoms: selectedSymptoms,
+                evaluation: selectedEvaluation,
+                comorbidities: selectedComorbidities,
+                triggers: selectedTriggers
+            });
+
+            let html = '';
+
+            const appendDetails = (categoryName, selectedItems, dataCategory) => {
+                if (selectedItems.length > 0) {
+                    html += `<h4>${categoryName}</h4><ul>`;
+                    selectedItems.forEach(selectedTerm => {
+                        const item = dataCategory.find(d => (typeof d === 'string' ? d : d.term) === selectedTerm);
+                        if (item) {
+                            const displayText = typeof item === 'string' ? item : item.term;
+                            const description = typeof item === 'object' && item.description ? item.description : '';
+                            html += `<li>
+                                <strong>${displayText}</strong>`;
+                            if (description) {
+                                html += `<small>${description}</small>`;
+                            }
+                            html += `</li>`;
+                        }
+                    });
+                    html += `</ul>`;
+                }
+            };
+
+            appendDetails('症状', selectedSymptoms, symptomData.症状);
+            appendDetails('評価指標', selectedEvaluation, symptomData.評価指標);
+            appendDetails('合併症', selectedComorbidities, symptomData.合併症);
+            appendDetails('増悪・誘発因子', selectedTriggers, symptomData["増悪・誘発因子"]);
+
+            if (selectedSymptoms.length === 0 && selectedEvaluation.length === 0 && selectedComorbidities.length === 0 && selectedTriggers.length === 0) {
+                resultsContainer.innerHTML = '<p>確認する項目をチェックしてください。</p>';
+            } else {
+                // Add summary at the top
+                const totalItems = selectedSymptoms.length + selectedEvaluation.length + selectedComorbidities.length + selectedTriggers.length;
+                const summaryHtml = `
+                    <div style="background: linear-gradient(135deg, #007aff 0%, #0056b3 100%); color: white; padding: 20px; border-radius: 10px; margin-bottom: 30px; text-align: center;">
+                        <h3 style="margin: 0 0 10px 0; font-size: 20px;">📊 確認結果サマリー</h3>
+                        <p style="margin: 0; font-size: 16px; opacity: 0.9;">選択された項目: <strong>${totalItems}件</strong></p>
+                    </div>
+                `;
+                resultsContainer.innerHTML = summaryHtml + html;
+                
+                // Add animation effect
+                resultsContainer.style.opacity = '0';
+                resultsContainer.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    resultsContainer.style.transition = 'all 0.5s ease';
+                    resultsContainer.style.opacity = '1';
+                    resultsContainer.style.transform = 'translateY(0)';
+                }, 100);
+            }
+            
+            // Scroll to results
+            resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            console.log('Results updated');
+        }
+    </script>
+</body>
+</html>

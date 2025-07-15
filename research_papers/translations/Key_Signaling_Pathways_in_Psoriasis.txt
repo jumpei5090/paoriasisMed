@@ -1,0 +1,147 @@
+
+
+**乾癬の主要なシグナル伝達経路：抗乾癬治療薬からの最近の洞察**
+
+**レビュー**
+
+Hakim Ben https://www.google.com/search?q=Abdallah, Claus Johansen, Lars Iversen
+デンマーク、オーフス大学病院皮膚科
+
+### 要旨
+
+[cite\_start]乾癬は、いくつかの合併症と生活の質の低下を伴う一般的な慢性炎症性皮膚疾患です [cite: 10][cite\_start]。過去数十年間で、非常に効果的な標的療法が乾癬の管理に飛躍的な進歩をもたらし、その病態に関する重要な洞察を提供しました [cite: 11][cite\_start]。この記事では、病態生理学的経路の現在の概念と、抗乾癬治療薬の最近の進歩をレビューし、乾癬における主要な標的、シグナル伝達経路、および臨床効果に焦点を当てます [cite: 12]。
+
+[cite\_start]**キーワード:** 乾癬、低分子化合物、シグナル伝達経路、新規治療、生物学的製剤 [cite: 13]
+
+-----
+
+### はじめに
+
+[cite\_start]乾癬は、地域による有病率が0.14%から1.99%の間で変動する、一般的な慢性炎症性皮膚疾患です [cite: 20][cite\_start]。尋常性乾癬は最も一般的なタイプで、乾癬症例の約90%で見られます [cite: 21][cite\_start]。これは、皮膚のどの部位にも影響を及ぼす可能性のある紅斑性で鱗屑を伴う病変を特徴としますが、一般的には好発部位（伸側表面および頭皮）に影響を及ぼします [cite: 22][cite\_start]。その他のあまり一般的でない乾癬のタイプには、滴状乾癬、逆乾癬、膿疱性乾癬（全身性膿疱性乾癬または手掌足底に限定される掌蹠膿疱症）、および稀で重篤な広範囲の皮膚の発赤である乾癬性紅皮症が含まれます [cite: 23, 24][cite\_start]。乾癬は、合併症（乾癬性関節炎、心血管イベント、炎症性腸疾患など）、精神障害（うつ病、不安、自殺念慮）、および生活の質の大幅な低下と関連しています [cite: 25][cite\_start]。遺伝的、環境的（皮膚の外傷、感染症など）、および行動的要因（喫煙など）が乾癬の発症に寄与します [cite: 26][cite\_start]。乾癬の病態はまだ完全には解明されていませんが、最も受け入れられている概念は、サイトカインを介した免疫細胞とケラチノサイト間の相互作用によって駆動される炎症の開始段階と維持段階を示唆しています [cite: 27][cite\_start]。治療の主流は、光線療法、外用および全身治療を含む免疫抑制です [cite: 28][cite\_start]。近年、生物学的製剤による標的療法の導入は、乾癬の管理に大きな進歩をもたらし、病態の理解をさらに深めました [cite: 28][cite\_start]。このレビューでは、抗乾癬治療薬からの最近の進歩と洞察を提供し、尋常性乾癬における主要な標的、シグナル伝達経路、および臨床効果に焦点を当てます [cite: 29]。
+
+### 病態
+
+[cite\_start]乾癬は、樹状細胞（DC）とケラチノサイトが重要な役割を果たす、自然免疫系と適応免疫系の間のクロストークに依存するT細胞介在性疾患です [cite: 31, 38][cite\_start]。乾癬の炎症は、開始段階と、それに続く正のフィードバックループによって維持される慢性炎症を特徴とします [cite: 38][cite\_start]。炎症カスケードを引き起こす正確な免疫イベントはまだ不明です [cite: 39][cite\_start]。自己抗原が開始の病態メカニズムとして提案されています [cite: 39][cite\_start]。最も研究されている自己抗原は、カテリシジン抗菌ペプチド（LL-37としても知られる）であり、皮膚の損傷に応じて免疫細胞やケラチノサイトによって産生されます（図1） [cite: 40][cite\_start]。LL-37は自己DNhttps://www.google.com/search?q=AまたはRNhttps://www.google.com/search?q=Aと複合体を形成し、それぞれトール様受容体-9（TLR-9）およびTLR-7を介して形質細胞様DC（pDC）を活性化します [cite: 41][cite\_start]。その後、pDCはインターフェロン（IFN）-αを産生し、それが従来型DC（cDC）を活性化します [cite: 44][cite\_start]。さらに、RNhttps://www.google.com/search?q=A-LL37はTLR8を介してcDCを直接活性化することがあります [cite: 45][cite\_start]。その後、活性化されたcDCは、抗原提示とサイトカイン（腫瘍壊死因子（TNF）-α、インターロイキン（IL）-12、IL-23など）の分泌を通じて自己反応性T細胞の増殖を刺激し、促進します [cite: 45][cite\_start]。ナイーブT細胞のTヘルパー17細胞（Th17）への分化はIL-23とTGFβおよびIL-6の分泌に依存し、Th1への分化はIL-12に依存します [cite: 45]。
+
+**図1. 乾癬の病態に関する現在の概念。**
+[cite\_start]皮膚の損傷に応じて、損傷したケラチノサイトはLL-37を放出し、これが自己DNhttps://www.google.com/search?q=A/RNhttps://www.google.com/search?q=Aと複合体を形成します [cite: 92][cite\_start]。この複合体はTLRに結合して樹状細胞を活性化し、樹状細胞は抗原提示とサイトカインの分泌を通じて自己反応性T細胞の増殖と分化を促進します [cite: 93][cite\_start]。IL-23はTh17細胞とTh22細胞の分化を促進し、一方IL-12はTh1細胞を促進します [cite: 94][cite\_start]。活性化されたTh22細胞とTh17細胞はTNF-α、IL-17、IL-22を分泌し、これらがケラチノサイトを刺激して増殖させ、炎症性サイトカイン、ケモカイン、抗菌ペプチドを産生させ、これがさらに免疫細胞を活性化し、正のフィードバックループを可能にします [cite: 95][cite\_start]。自己抗原を誘因とする他の概念には、メラノサイト内のhttps://www.google.com/search?q=ADhttps://www.google.com/search?q=AMTSL5が自己反応性CD8+ T細胞に結合・活性化し、その後IL-17とIFN-γを放出するケースや [cite: 96][cite\_start]、CD1a+樹状細胞上で発現するネオリピド自己抗原を産生するPLhttps://www.google.com/search?q=A2G4Dがあり、これが提示されると脂質特異的T細胞を活性化し、IL-17https://www.google.com/search?q=AとIL-22を分泌するケースがあります [cite: 97]。
+
+[cite\_start]活性化されたTh細胞はサイトカインを分泌します。Th17細胞はIL-17、IL-22、TNF-αを分泌し、Th1細胞はIFN-γとTNF-αを分泌します [cite: 108, 107][cite\_start]。これらのサイトカインは共同でケラチノサイトを刺激して増殖させ、炎症性サイトカイン（IL-1、IL-6、TNF-αなど）、ケモカイン（CXCL1、CXCL2、CXCL3、CXCL5など）、抗菌ペプチド（S100https://www.google.com/search?q=A7/8/9、ヒトβ-ディフェンシン2、LL-37など）を産生させ、これらが免疫細胞を動員・さらに刺激し、乾癬の炎症を増幅させます [cite: 109][cite\_start]。T細胞とケラチノサイト間のこの正のフィードバックループが、乾癬性炎症の維持段階を駆動します [cite: 109]。
+
+[cite\_start]提案されている開始と病態のモデル（図1）はin-vitro研究で示されていますが、これらのモデルは依然として仮説の域を出ません [cite: 112][cite\_start]。さらに、これらのモデルは臨床的妥当性に直接結びつけることはできません [cite: 113][cite\_start]。例えば、IFN-α、IFN-γ、IL-22を標的とする治療法は、乾癬患者において臨床的有効性を示すことに失敗しています [cite: 114]。
+
+-----
+
+### 治療
+
+#### 生物学的製剤
+
+[cite\_start]生物学的製剤による標的療法の導入は、中等度から重度の乾癬の管理を効果的かつ安全な治療法として革命的に変えました [cite: 117][cite\_start]。生物学的製剤のタンパク質性の性質は、細胞外標的に対する高い特異性を可能にしますが、非経口投与、高い製造コスト、免疫原性といった欠点があります [cite: 118][cite\_start]。現在、乾癬治療に用いられる生物学的製剤は、TNF-α、IL-12/23、IL-17、IL-23阻害薬の4クラスです [cite: 120]。
+
+**表1. 尋常性乾癬治療のための標的療法の概要**
+
+| 薬剤クラス | 薬剤 | 標的 | 乾癬における開発段階 | 投与経路 | NCT識別子 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **TNFα阻害薬** | アダリムマブ | TNFα | 承認済み | 皮下注 | |
+| | セルトリズマブ | TNFα | 承認済み | 皮下注 | |
+| | エタネルセプト | TNFα | 承認済み | 皮下注 | |
+| | インフリキシマブ | TNFα | 承認済み | 静注 | |
+| | ゴリムマブ | TNFα | | 皮下注 | |
+| **IL-17阻害薬** | ブロダルマブ | IL-17Rhttps://www.google.com/search?q=A | 承認済み | 皮下注 | |
+| | イキセキズマブ | IL-17https://www.google.com/search?q=A | 承認済み | 皮下注 | |
+| | セクキヌマブ | IL-17https://www.google.com/search?q=A | 承認済み | 皮下注 | |
+| | ビメキズマブ | IL-17https://www.google.com/search?q=A, IL-17F | 第3相 | 皮下注 | NCT03412747, NCT03536884, NCT03598790, NCT03766685 |
+| | ネタキマブ (BCD-085) | IL-17https://www.google.com/search?q=A | 第3相 (ロシアで承認) | 皮下注 | NCT03390101 |
+| | https://www.google.com/search?q=ABY-035 | IL-17https://www.google.com/search?q=A, アルブミン | 第2相 | 皮下注 | NCT03591887 |
+| | ソネロキナブ (M1095) | IL-17https://www.google.com/search?q=A, IL-17F | 第2相 | 皮下注 | NCT03384745 |
+| | ヴナキズマブ (SHR-1314) | IL-17https://www.google.com/search?q=A | 第3相 | 皮下注 | NCT04839016 |
+| **IL-23阻害薬** | グセルクマブ | IL-23p19 | 承認済み | 皮下注 | |
+| | リサンキズマブ | IL-23p19 | 承認済み | 皮下注 | |
+| | チルドラキズマブ | IL-23p19 | 承認済み | 皮下注 | |
+| | ミリキズマブ | IL-23p19 | 第3相 | 皮下注 | NCT03482011, NCT03535194, NCT03556202 |
+| **IL-12/23阻害薬** | ウステキヌマブ | IL-12/23p40 | 承認済み | 皮下注 | |
+| **PDE4阻害薬** | アプレミラスト | PDE4 | 承認済み | 経口 | |
+| | ロフルミラスト | PDE4 | 第3相 | 外用/経口 | NCT04549870, NCT04211363, NCT04211389, NCT04286607 |
+| | クリサボロール (https://www.google.com/search?q=AN2728) | PDE4 | 第2相 | 外用 | NCT01300052 |
+| | Hemay005 | PDE4 | 第2相 | 経口 | NCT04102241 |
+| **Jhttps://www.google.com/search?q=AK阻害薬** | デウクラバシチニブ (BMS-986165) | TYK2 | 第3相 | 経口 | NCT04036435, NCT04772079, NCT03924427, NCT04167462, NCT03611751, NCT03624127 |
+| | トファシチニブ (CP-690,550) | Jhttps://www.google.com/search?q=AK1, Jhttps://www.google.com/search?q=AK3 | 第3相 | 経口 | |
+| | アブロシチニブ (PF-04965842) | Jhttps://www.google.com/search?q=AK1 | 第2相 | 経口 | NCT02201524 |
+| | バリシチニブ (INCB028050) | Jhttps://www.google.com/search?q=AK1, Jhttps://www.google.com/search?q=AK2 | 第2相 | 経口 | NCT01490632 |
+| | ブレポシチニブ (PF-06700841) | Jhttps://www.google.com/search?q=AK1, TYK2 | 第2相 | 経口/外用 | NCT02969018, NCT03850483 |
+| | イタシチニブ (INCB039110) | Jhttps://www.google.com/search?q=AK1 | 第2相 | 経口 | NCT01634087 |
+| | ペフィシチニブ (https://www.google.com/search?q=ASP015K) | Jhttps://www.google.com/search?q=AK1, Jhttps://www.google.com/search?q=AK2, Jhttps://www.google.com/search?q=AK3, TYK2 | 第2相 | 経口 | NCT01096862 |
+| | PF-06826647 | TYK2 | 第2相 | 経口 | NCT03895372 |
+| | ルキソリチニブ | Jhttps://www.google.com/search?q=AK1, Jhttps://www.google.com/search?q=AK2 | 第2相 | 外用 | NCT00617994 |
+| | ソルシチニブ (GSK2586184) | Jhttps://www.google.com/search?q=AK1 | 第2相 | 経口 | NCT01782664 |
+| **RORγt阻害薬** | https://www.google.com/search?q=AUR101 | RORγt | 第2相 | 経口 | NCT04207801 |
+| | BI 730357 | RORγt | 第2相 | 経口 | NCT03635099, NCT03835481 |
+| | ESR-114 | RORγt | 第2相 | 外用 | NCT03630939 |
+| | GSK-2981278 | RORγt | 第2相 | 外用 | NCT03004846 |
+| | JTE-451 | RORγt | 第2相 | 経口 | NCT03832738 |
+| | VTP-43742 | RORγt | 第2相 | 経口 | NCT02555709 |
+| **SThttps://www.google.com/search?q=AT阻害薬** | SThttps://www.google.com/search?q=A-21 | SThttps://www.google.com/search?q=AT3 | 第2相 | 外用 | NCT01047943 |
+| **S1PR1拮抗薬** | ポネシモド (https://www.google.com/search?q=ACT-128800) | S1PR1 | 第2相 | 経口 | NCT00852670, NCT01208090 |
+| **https://www.google.com/search?q=A3https://www.google.com/search?q=AR作動薬** | ピクリデノソン (CF101) | https://www.google.com/search?q=A3https://www.google.com/search?q=AR | 第3相 | 経口 | NCT03168256 |
+| **https://www.google.com/search?q=AhR作動薬** | タピナロフ (Lhttps://www.google.com/search?q=AS41008) | https://www.google.com/search?q=AhR | 第3相 | 外用 | NCT04053387 |
+| **フマル酸エステル**| フマダーム | 複数 | ドイツで承認 | 経口 | |
+| | スキラレンス | 複数 | 欧州で承認 | 経口 | |
+| | FP-187 | 複数 | 第3相 | 経口 | NCT01726933 |
+| | XP23829 | 複数 | 第2相 | 経口 | NCT01230138 |
+| | PPC-06 | 複数 | 第2相 | 経口 | NCT03421197 |
+| **ROCK-2阻害薬** | ベルモスジル (KD025) | ROCK2 | 第2相 | 経口 | NCT02173301 |
+| **HSP90阻害薬** | RGRN-305 (CUDC-305) | HSP90 | 第1相 | 経口 | NCT02317627, NCT02106195, NCT02852967, NCT03675542 |
+
+**略語:** https://www.google.com/search?q=A3https://www.google.com/search?q=AR, https://www.google.com/search?q=A3アデノシン受容体; https://www.google.com/search?q=AhR, アリール炭化水素受容体; HSP90, 熱ショックタンパク質90; Iv, 静脈内; Jhttps://www.google.com/search?q=AK, ヤヌスキナーゼ; PDE4, ホスホジエステラーゼ4; ROCK, Rho関連キナーゼ; RORγt, レチノイン酸関連オーファン核内受容体ガンマ; [cite\_start]Sc, 皮下注 [cite: 155, 156]。
+
+##### TNF-α阻害薬
+
+[cite\_start]TNF-αは、関節リウマチ、乾癬性関節炎、炎症性腸疾患など、複数の炎症性疾患の病態に関与する多くの細胞種に影響を及ぼす主要な炎症誘発性サイトカインです [cite: 123][cite\_start]。皮膚では、TNF-αは免疫細胞（DC、T細胞、マクロファージなど）やケラチノサイトなど、さまざまな細胞によって産生されます [cite: 124][cite\_start]。乾癬におけるTNF-α標的化の有効性は、主にIL-23/17経路の阻害によるものと考えられています [cite: 126][cite\_start]。特に、TNF-α阻害薬はcDCからのIL-23放出を減少させ、ケラチノサイトにおけるIL-17誘導性の乾癬関連遺伝子発現に対するTNF-αの相乗効果を低下させます [cite: 127]。
+
+[cite\_start]現在、乾癬および乾癬性関節炎には5種類のTNF-α阻害薬が利用可能です（インフリキシマブ、アダリムマブ、エタネルセプト、ゴリムマブ、セルトリズマブ）が、ゴリムマブはまだ乾癬には承認されていません [cite: 135, 136][cite\_start]。短期（10～16週）のPhttps://www.google.com/search?q=ASI75奏効率は、インフリキシマブが80.4%、セルトリズマブが71.1%、アダリムマブが69.5%、エタネルセプトが40.1%と、薬剤間で差があります [cite: 138][cite\_start]。最も一般的な有害事象（https://www.google.com/search?q=AE）には、鼻咽頭炎、上気道感染症、注射部位反応があります [cite: 162]。
+
+**図2. 乾癬におけるシグナル伝達と標的。**
+[cite\_start](https://www.google.com/search?q=A) フマル酸エステル（Fhttps://www.google.com/search?q=AE）はNRF2の放出を促し、細胞保護遺伝子と炎症誘発性サイトカイン遺伝子の発現をそれぞれ誘導・抑制する [cite: 231][cite\_start]。またFhttps://www.google.com/search?q=AEは直接的、または誘導されたHO-1やMSK1の阻害を通じて間接的にNF-kBを阻害する [cite: 232][cite\_start]。(B) PDE4阻害はchttps://www.google.com/search?q=AMPを増加させ、PKhttps://www.google.com/search?q=Aを活性化し、転写因子CREBとhttps://www.google.com/search?q=ATF-1のリン酸化を引き起こし、抗炎症性サイトカインの遺伝子発現を増加させ、共役因子（CBPまたはp300）の競合によりNF-kBを阻害する [cite: 233][cite\_start]。(C) TNF-αがTNFRに結合すると、複合体Iが組み立てられ、Thttps://www.google.com/search?q=AK1がIKK複合体とMhttps://www.google.com/search?q=APK（JNKとp38）を活性化する [cite: 234][cite\_start]。IKK複合体はIκBαをリン酸化し、NF-kBを放出させる [cite: 235][cite\_start]。JNKとp38はhttps://www.google.com/search?q=AP1を活性化する [cite: 235][cite\_start]。https://www.google.com/search?q=AP1とNF-kBはいずれも炎症誘発性遺伝子の発現を増加させる [cite: 236][cite\_start]。(D) IL-17https://www.google.com/search?q=A/FはIL-17受容体複合体を刺激し、https://www.google.com/search?q=Act1、続いてTRhttps://www.google.com/search?q=AFのリクルートを引き起こす [cite: 236][cite\_start]。TRhttps://www.google.com/search?q=AF6はThttps://www.google.com/search?q=AK1経路を活性化し、NF-kBとhttps://www.google.com/search?q=AP1を活性化する [cite: 237][cite\_start]。TRhttps://www.google.com/search?q=AF2/5はRNhttps://www.google.com/search?q=A結合タンパク質（HuR、https://www.google.com/search?q=Arid5aなど）をリクルートし、炎症誘発性転写産物のmRNhttps://www.google.com/search?q=A安定化を促進する [cite: 238][cite\_start]。(E) IL-23がその受容体複合体に結合すると、TYK2とJhttps://www.google.com/search?q=AK2が活性化し、SThttps://www.google.com/search?q=AT3をリン酸化し、それが二量体化して炎症誘発性遺伝子とRORγtの発現を促進する [cite: 239][cite\_start]。Jhttps://www.google.com/search?q=AKiはTYK2/Jhttps://www.google.com/search?q=AK2を標的とすることでシグナル伝達を阻害する可能性がある [cite: 240][cite\_start]。RORγtの阻害はTh17の分化と応答を減少させる [cite: 240][cite\_start]。(F) ピクリデノソンがhttps://www.google.com/search?q=A3https://www.google.com/search?q=ARに結合すると、PKB/https://www.google.com/search?q=Aktの活性が阻害され、NF-kB活性が低下する [cite: 241][cite\_start]。(G) タピナロフはhttps://www.google.com/search?q=AhRに結合し、https://www.google.com/search?q=AhR-タピナロフ複合体はhttps://www.google.com/search?q=ARNTとヘテロ二量体を形成し、炎症性サイトカインのダウンレギュレーションと皮膚バリアタンパク質のアップレギュレーションを引き起こす [cite: 242]。
+
+##### インターロイキン23阻害薬
+
+[cite\_start]IL-23は、IL-12、IL-23、IL-27、IL-35、IL-39、IL-Yを含むIL-12サイトカインファミリーに属し、これらはサブユニットと受容体を共有しています [cite: 167][cite\_start]。乾癬病変では、IL-23p19とIL-12とIL-23に共通のp40サブユニットの発現が著しく増加していますが、IL-12p35はアップレギュレートされておらず、乾癬の病態においてIL-12よりもIL-23が重要な役割を果たしていることを示唆しています [cite: 172][cite\_start]。分泌されたIL-23がその受容体複合体に結合すると、細胞内の受容体関連チロシンキナーゼTYK2とJhttps://www.google.com/search?q=AK2が活性化され、主にシグナル伝達兼転写活性化因子（SThttps://www.google.com/search?q=AT）3、および程度は低いもののSThttps://www.google.com/search?q=AT1、SThttps://www.google.com/search?q=AT2、SThttps://www.google.com/search?q=AT4を動員します（図2） [cite: 173]。
+
+[cite\_start]現在、中等度から重度の乾癬治療薬として4つのIL-23阻害薬が承認されています（ウステキヌマブ、グセルクマブ、チルドラキズマブ、リサンキズマブ） [cite: 260][cite\_start]。IL-23阻害薬は、頻度の低い投与で効果的な乾癬治療の選択肢であり、短期（10-16週）のPhttps://www.google.com/search?q=ASI75奏効率も良好です [cite: 262][cite\_start]。リサンキズマブは89.2%、グセルクマブは86.8%、ミリキズマブは82.5%、チルドラキズマブは64.9%、ウステキヌマブは69.7%です [cite: 263]。
+
+##### インターロイキン17阻害薬
+
+[cite\_start]IL-17ファミリーは6つの異なるサブユニット（IL-17https://www.google.com/search?q=AからIL-17F）から成り、それぞれがホモ二量体として機能的なIL-17を形成します [cite: 270][cite\_start]。IL-17https://www.google.com/search?q=AとIL-17Fは例外的にヘテロ二量体を形成できます [cite: 271][cite\_start]。IL-17https://www.google.com/search?q=Aホモ二量体、IL-17Fホモ二量体、またはIL-17https://www.google.com/search?q=A/Fヘテロ二量体は、IL-17Rhttps://www.google.com/search?q=AとIL-17RCサブユニットで構成される同じ受容体複合体を介して伝達されます [cite: 276][cite\_start]。リガンド結合により、受容体複合体の細胞内ドメインはアダプタータンパク質であるhttps://www.google.com/search?q=Act1を動員し、これがさまざまなTNF受容体関連因子（TRhttps://www.google.com/search?q=AF）に結合して下流の経路を開始します（図2） [cite: 277]。
+
+[cite\_start]IL-17阻害薬クラスには、乾癬治療用に承認された3つのモノクローナル抗体があります [cite: 283][cite\_start]。セクキヌマブとイキセキズマブはIL-17https://www.google.com/search?q=Aを標的とし [cite: 284][cite\_start]、ブロダルマブは受容体IL-17Rhttps://www.google.com/search?q=Aを標的とします [cite: 285][cite\_start]。IL-17阻害薬の有効性と迅速な反応性は、良好な短期（10-16週）Phttps://www.google.com/search?q=ASI75奏効率で実証されています [cite: 285][cite\_start]。ブロダルマブは88.7%、イキセキズマブは88.8%、セクキヌマブは83.1%です [cite: 286][cite\_start]。最近、IL-17https://www.google.com/search?q=AとIL-17Fの両方を標的とする抗体であるビメキズマブが第3相試験を完了しました [cite: 286]。
+
+#### 低分子化合物
+
+[cite\_start]低分子化合物は、通常分子量が700 Da未満の有機低分子であり、生物学的製剤と比較していくつかの利点があります [cite: 296][cite\_start]。経口または外用投与用に製剤化でき、細胞内に拡散して細胞内シグナル伝達経路を標的とすることができ、通常は製造コストが低いです [cite: 297][cite\_start]。しかし、欠点としては、標的選択性が低くオフターゲット効果があること、また現在、乾癬における有効性が生物学的製剤と比較して低いことが挙げられます [cite: 298]。
+
+##### ホスホジエステラーゼ4阻害薬
+
+[cite\_start]ホスホジエステラーゼ4（PDE4）は、免疫細胞（DC、T細胞、マクロファージ、単球など）やケラチノサイトで発現する主要なPDEの1つであり、免疫調節効果に関与するセカンドメッセンジャーである細胞内サイクリックアデノシン一リン酸（chttps://www.google.com/search?q=AMP）の加水分解を担っています（図2） [cite: 301][cite\_start]。アプレミラストは乾癬およびPshttps://www.google.com/search?q=Aの治療に承認された唯一のPDE4阻害薬であり [cite: 310][cite\_start]、その他（ロフルミラストやクリサボロールなど）が研究されています [cite: 310][cite\_start]。アプレミラストの短期（10-16週）および長期（44-60週）のPhttps://www.google.com/search?q=ASI75奏効率は、それぞれ30.8%および43.2%でした [cite: 311]。
+
+##### ヤヌスキナーゼ阻害薬
+
+[cite\_start]乾癬における主要な病原性サイトカインの多く（IFN、IL-6、IL-22、IL-23など）は、その受容体に結合し、Jhttps://www.google.com/search?q=AK/SThttps://www.google.com/search?q=ATシグナル伝達経路を介して細胞内シグナルを伝達します [cite: 318][cite\_start]。現在、乾癬に対して2つのJhttps://www.google.com/search?q=AK阻害薬（Jhttps://www.google.com/search?q=AKi）が第3相試験中または完了済みです。トファシチニブ（Jhttps://www.google.com/search?q=AK1/Jhttps://www.google.com/search?q=AK3阻害薬）とデウクラバシチニブ（TYK2阻害薬）です [cite: 329][cite\_start]。トファシチニブを用いた2つの第3相臨床試験に基づくと、16週での短期Phttps://www.google.com/search?q=ASI75奏効率は59%であり、デウクラバシチニブを用いた第2相臨床試験データに基づくと、12週で75%でした [cite: 332]。
+
+##### フマル酸エステル
+
+[cite\_start]フマル酸エステル（Fhttps://www.google.com/search?q=AE）は、抗炎症作用を持つフマル酸の親油性エステル誘導体です [cite: 340][cite\_start]。その作用機序は複雑で完全には解明されていません [cite: 341][cite\_start]。主な分子メカニズムは、NrF2（核内因子E2関連因子2）の活性化とNF-kBの阻害に関与しているようです（図2） [cite: 343][cite\_start]。第3相臨床試験では、16週でのPhttps://www.google.com/search?q=ASI75奏効率は、ジメチルフマレート（Lhttps://www.google.com/search?q=AS41008）で37.5%、ジメチルフマレートとモノメチルフマレート塩の組み合わせ（フマダーム）で40.3%でした [cite: 352]。
+
+##### RORγt阻害薬
+
+[cite\_start]レチノイン酸関連オーファン受容体であるRORα、-β、-γは、リガンド依存性の転写因子です [cite: 356][cite\_start]。RORγt（RORγのアイソフォーム）は、Th17細胞の分化とエフェクター機能に関与しています [cite: 357][cite\_start]。RORγtの阻害は、Th17応答を妨げる魅力的な薬理学的標的です [cite: 363][cite\_start]。いくつかのRORγt阻害薬が乾癬の第2相臨床試験で活動中または完了しています [cite: 365]。
+
+##### その他の低分子化合物
+
+  * [cite\_start]**スフィンゴシン-1-リン酸受容体1拮抗薬:** ポネシモドは、リンパ球の遊走を防ぐ経口S1PR1拮抗薬です [cite: 368][cite\_start]。第2相試験では、16週で48.1%の被験者がPhttps://www.google.com/search?q=ASI75を達成しました [cite: 369]。
+  * [cite\_start]**アリール炭化水素受容体作動薬:** タピナロフは、炎症性サイトカインを下方制御し、皮膚バリアタンパク質の発現を増加させるhttps://www.google.com/search?q=AhR作動薬です [cite: 376][cite\_start]。2つの第3相試験では、12週で36.1%と47.6%のPhttps://www.google.com/search?q=ASI75奏効率が示されました [cite: 377]。
+  * [cite\_start]**https://www.google.com/search?q=A3アデノシン受容体作動薬:** ピクリデノソンは、抗炎症効果をもたらす経口https://www.google.com/search?q=A3https://www.google.com/search?q=AR作動薬です [cite: 380][cite\_start]。第2相試験では、32週で35.5%のPhttps://www.google.com/search?q=ASI75奏効率が示され、忍容性も良好でした [cite: 380]。
+  * [cite\_start]**熱ショックタンパク質90 (HSP90) 阻害薬:** HSP90は、炎症を媒介する転写因子や細胞内シグナル伝達分子の折り畳み、安定化、活性化を担うシャペロンタンパク質です（図2） [cite: 383][cite\_start]。HSP90阻害薬RGRN-305は、乾癬患者を対象とした第1相臨床試験が進行中です [cite: 385]。
+
+### 結論
+
+[cite\_start]細胞外サイトカインを標的とする非常に効果的な生物学的療法の最近の進歩は、乾癬の病態と主要なシグナル伝達経路に関する新しい洞察を提供しました [cite: 387][cite\_start]。これらの新しい洞察は、細胞内分子や経路を標的とする低分子化合物による新しい治療戦略を可能にしました [cite: 388][cite\_start]。現在の低分子化合物の有効性は新しい生物学的製剤に劣るように見えますが、低分子化合物は経口投与、低い製造コスト、免疫原性の欠如といった利点を提供します [cite: 389][cite\_start]。乾癬の管理における新規低分子治療薬の将来的な役割を決定するためには、さらなる基礎研究および臨床研究が必要です [cite: 390]。

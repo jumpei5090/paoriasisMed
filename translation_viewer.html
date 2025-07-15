@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本語翻訳 - PsoriasisMed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PsoriasisMed</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hero">ホーム</a></li>
+                    <li><a href="index.html#categories">治療薬</a></li>
+                    <li><a href="index.html#comparison">薬剤比較</a></li>
+                    <li><a href="index.html#search-by-condition">症状確認表</a></li>
+                    <li><a href="index.html#about">サイトについて</a></li>
+                </ul>
+            </nav>
+            <div class="utility-nav">
+                <a href="search.html" class="search-icon">検索</a>
+                <a href="favorites.html" class="favorite-icon">お気に入り</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="translation-viewer-section">
+            <div class="container">
+                <div class="translation-header">
+                    <div class="breadcrumb">
+                        <a href="research_papers.html">← 医学論文情報に戻る</a>
+                    </div>
+                    <h1 id="translation-title">日本語翻訳</h1>
+                    <div class="translation-meta">
+                        <span class="translation-badge">日本語翻訳</span>
+                        <span class="translation-note">※機械翻訳による参考訳です</span>
+                    </div>
+                </div>
+
+                <div class="translation-content">
+                    <div class="translation-paper" id="translation-content">
+                        <div class="loading-message">
+                            <div class="loading-icon">📄</div>
+                            <p>翻訳を読み込み中...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="translation-actions">
+                    <button class="button secondary" onclick="window.print()">🖨️ 印刷</button>
+                    <button class="button secondary" onclick="copyToClipboard()">📋 コピー</button>
+                    <a href="research_papers.html" class="button primary">論文一覧に戻る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-logo">PsoriasisMed</div>
+                <div class="footer-nav">
+                    <h4>治療薬</h4>
+                    <ul>
+                        <li><a href="biological_agents.html">生物学的製剤</a></li>
+                        <li><a href="oral_medications.html">内服薬</a></li>
+                        <li><a href="topical_medications.html">外用薬</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>情報</h4>
+                    <ul>
+                        <li><a href="search.html">薬剤検索</a></li>
+                        <li><a href="index.html#comparison">比較機能</a></li>
+                        <li><a href="patient_symptom_checklist.html">患者症状確認表</a></li>
+                        <li><a href="research_papers.html">医学論文情報</a></li>
+                        <li><a href="how_to_use.html">使い方</a></li>
+                        <li><a href="index.html#about">サイト情報</a></li>
+                        <li><a href="privacy_policy.html">プライバシーポリシー</a></li>
+                        <li><a href="terms_of_service.html">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 PsoriasisMed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="research_papers_data.js"></script>
+    <script>
+        // URLパラメータから翻訳ファイル名を取得
+        function getTranslationFileName() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('file');
+        }
+
+        // 翻訳テキストを読み込む
+        function loadTranslation() {
+            const fileName = getTranslationFileName();
+            if (!fileName) {
+                showError('翻訳ファイルが指定されていません。');
+                return;
+            }
+
+            // 対応する論文データを検索
+            const paper = researchPapersData.find(p => 
+                p.translation_url.includes(fileName)
+            );
+
+            if (paper) {
+                document.getElementById('translation-title').textContent = 
+                    `${paper.title} - 日本語翻訳`;
+                document.title = `${paper.title} - 日本語翻訳 - PsoriasisMed`;
+            }
+
+            // 翻訳ファイルを読み込み
+            fetch(`research_papers/translations/${fileName}.txt`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`翻訳ファイルが見つかりません (HTTP ${response.status})`);
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    displayTranslation(text);
+                })
+                .catch(error => {
+                    console.error('翻訳読み込みエラー:', error);
+                    showError(`翻訳の読み込みに失敗しました: ${error.message}`);
+                });
+        }
+
+        // 翻訳テキストを表示（マークダウン形式対応）
+        function displayTranslation(text) {
+            const content = document.getElementById('translation-content');
+            
+            // マークダウンをHTMLに変換
+            const html = convertMarkdownToHtml(text);
+            content.innerHTML = html;
+        }
+
+        // マークダウンをHTMLに変換する関数
+        function convertMarkdownToHtml(text) {
+            let html = text;
+            
+            // 行に分割
+            const lines = html.split('\n');
+            let processedLines = [];
+            let inTable = false;
+            let tableRows = [];
+            let inList = false;
+            let listItems = [];
+            let currentListType = '';
+            
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i];
+                
+                // 空行をスキップ
+                if (!line.trim()) {
+                    // リストが終了
+                    if (inList) {
+                        processedLines.push(closeList(listItems, currentListType));
+                        inList = false;
+                        listItems = [];
+                        currentListType = '';
+                    }
+                    processedLines.push('');
+                    continue;
+                }
+                
+                // 見出しの処理
+                if (line.match(/^#{1,6}\s/)) {
+                    // リストが終了
+                    if (inList) {
+                        processedLines.push(closeList(listItems, currentListType));
+                        inList = false;
+                        listItems = [];
+                        currentListType = '';
+                    }
+                    
+                    const headerLevel = (line.match(/^#+/) || [''])[0].length;
+                    const headerText = line.replace(/^#+\s*/, '').replace(/\*+$/, '');
+                    processedLines.push(`<h${Math.min(headerLevel + 1, 6)}>${headerText}</h${Math.min(headerLevel + 1, 6)}>`);
+                    continue;
+                }
+                
+                // 水平線の処理
+                if (line.match(/^---+$/)) {
+                    processedLines.push('<hr>');
+                    continue;
+                }
+                
+                // テーブルの処理
+                if (line.match(/^\|.*\|$/)) {
+                    if (!inTable) {
+                        inTable = true;
+                        tableRows = [];
+                        processedLines.push('<table class="translation-table">');
+                    }
+                    
+                    const cells = line.split('|').map(cell => cell.trim()).filter((cell, index, arr) => index !== 0 && index !== arr.length - 1);
+                    
+                    // テーブルヘッダーかセパレーターの判定
+                    if (cells.every(cell => cell.match(/^:?-+:?$/))) {
+                        // セパレーター行はスキップ
+                        continue;
+                    }
+                    
+                    const isHeaderRow = i === 0 || (i > 0 && lines[i + 1] && lines[i + 1].match(/^\|.*:?-+:?.*\|$/));
+                    const cellTag = isHeaderRow ? 'th' : 'td';
+                    
+                    const rowHtml = '<tr>' + cells.map(cell => `<${cellTag}>${formatInlineElements(cell)}</${cellTag}>`).join('') + '</tr>';
+                    processedLines.push(rowHtml);
+                    continue;
+                } else if (inTable) {
+                    // テーブル終了
+                    processedLines.push('</table>');
+                    inTable = false;
+                }
+                
+                // リストの処理
+                const bulletMatch = line.match(/^(\s*)[*+-]\s+(.+)$/);
+                const numberedMatch = line.match(/^(\s*)\d+\.\s+(.+)$/);
+                
+                if (bulletMatch || numberedMatch) {
+                    const isNumbered = !!numberedMatch;
+                    const content = (bulletMatch || numberedMatch)[2];
+                    const indent = (bulletMatch || numberedMatch)[1].length;
+                    
+                    if (!inList || currentListType !== (isNumbered ? 'ol' : 'ul')) {
+                        if (inList) {
+                            processedLines.push(closeList(listItems, currentListType));
+                        }
+                        inList = true;
+                        currentListType = isNumbered ? 'ol' : 'ul';
+                        listItems = [];
+                    }
+                    
+                    listItems.push({
+                        content: formatInlineElements(content),
+                        indent: indent
+                    });
+                    continue;
+                } else if (inList) {
+                    // リスト終了
+                    processedLines.push(closeList(listItems, currentListType));
+                    inList = false;
+                    listItems = [];
+                    currentListType = '';
+                }
+                
+                // 引用の処理
+                if (line.match(/^>\s/)) {
+                    const quoteText = line.replace(/^>\s*/, '');
+                    processedLines.push(`<blockquote>${formatInlineElements(quoteText)}</blockquote>`);
+                    continue;
+                }
+                
+                // 通常の段落
+                if (line.trim()) {
+                    processedLines.push(`<p>${formatInlineElements(line)}</p>`);
+                }
+            }
+            
+            // 最後にリストが残っている場合
+            if (inList) {
+                processedLines.push(closeList(listItems, currentListType));
+            }
+            
+            // 最後にテーブルが残っている場合
+            if (inTable) {
+                processedLines.push('</table>');
+            }
+            
+            return processedLines.join('\n');
+        }
+        
+        // リストを閉じる関数
+        function closeList(listItems, listType) {
+            if (listItems.length === 0) return '';
+            
+            let html = `<${listType}>`;
+            listItems.forEach(item => {
+                html += `<li>${item.content}</li>`;
+            });
+            html += `</${listType}>`;
+            return html;
+        }
+        
+        // インライン要素の処理
+        function formatInlineElements(text) {
+            // 引用タグの処理 [cite: xxx] -> 引用リンク
+            text = text.replace(/\[cite:\s*(\d+)\]/g, '<sup class="citation"><a href="#ref-$1" title="引用 $1">[$1]</a></sup>');
+            text = text.replace(/\[cite_start\]/g, '');
+            
+            // 太字の処理
+            text = text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+            
+            // 斜体の処理
+            text = text.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+            
+            // インラインコードの処理
+            text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+            
+            // URLの処理
+            text = text.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+            
+            return text;
+        }
+
+        // エラーメッセージを表示
+        function showError(message) {
+            const content = document.getElementById('translation-content');
+            content.innerHTML = `
+                <div class="error-message">
+                    <div class="error-icon">⚠️</div>
+                    <h3>翻訳の読み込みに失敗しました</h3>
+                    <p>${message}</p>
+                    <div class="error-help">
+                        <p><strong>解決方法:</strong></p>
+                        <ul>
+                            <li>翻訳ファイルが <code>research_papers/translations/</code> フォルダに配置されているか確認してください</li>
+                            <li>ファイル名が正しいか確認してください</li>
+                            <li>HTTPサーバーが起動しているか確認してください</li>
+                        </ul>
+                    </div>
+                </div>
+            `;
+        }
+
+        // クリップボードにコピー
+        function copyToClipboard() {
+            const content = document.getElementById('translation-content');
+            const text = content.innerText;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                // 成功時の通知
+                showNotification('翻訳テキストをクリップボードにコピーしました');
+            }).catch(err => {
+                console.error('コピーに失敗しました:', err);
+                showNotification('コピーに失敗しました', 'error');
+            });
+        }
+
+        // 通知を表示
+        function showNotification(message, type = 'success') {
+            const notification = document.createElement('div');
+            notification.className = `notification ${type}`;
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#4CAF50' : '#f44336'};
+                color: white;
+                padding: 12px 24px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                z-index: 1000;
+                animation: slideIn 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // ページ読み込み時に翻訳を読み込み
+        document.addEventListener('DOMContentLoaded', function() {
+            loadTranslation();
+        });
+    </script>
+
+    <style>
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</body>
+</html>

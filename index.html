@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsoriasisMed - 乾癬治療薬情報</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PsoriasisMed</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">ホーム</a></li>
+                    <li><a href="#categories">治療薬</a></li>
+                    <li><a href="#comparison">薬剤比較</a></li>
+                    <li><a href="#search-by-condition">症状確認表</a></li>
+                    <li><a href="#research-papers">医学論文</a></li>
+                    <li><a href="#about">サイトについて</a></li>
+                </ul>
+            </nav>
+            <div class="utility-nav">
+                <a href="search.html" class="search-icon">検索</a>
+                <a href="favorites.html" class="favorite-icon">お気に入り</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>PsoriasisMed</h1>
+                <h2>乾癬治療薬情報</h2>
+                <p>正確で最新の治療薬情報を簡単に比較・検索</p>
+                <a href="search.html" class="button primary">治療薬を探す</a>
+            </div>
+        </section>
+
+        <section id="categories" class="categories-section">
+            <div class="container">
+                <h3>治療薬カテゴリー</h3>
+                <div class="category-cards">
+                    <div class="card">
+                        <h4>生物学的製剤</h4>
+                        <p>免疫系の特定の部分を標的とする注射薬。重度の乾癬に効果的</p>
+                        <p class="count">13種類</p>
+                        <a href="biological_agents.html" class="button primary">詳細を見る</a>
+                    </div>
+                    <div class="card">
+                        <h4>内服薬</h4>
+                        <p>経口で服用する薬剤。免疫抑制薬や分子標的薬など</p>
+                        <p class="count">6種類</p>
+                        <a href="oral_medications.html" class="button primary">詳細を見る</a>
+                    </div>
+                    <div class="card">
+                        <h4>外用薬</h4>
+                        <p>皮膚に直接塗布する薬剤。ステロイドやビタミンD3製剤など</p>
+                        <p class="count">22種類</p>
+                        <a href="topical_medications.html" class="button primary">詳細を見る</a>
+                    </div>
+                    <div class="card">
+                        <h4>バイオシミラー</h4>
+                        <p>生物学的製剤の後発医薬品。先行品と同様の効果で薬価が安価</p>
+                        <p class="count">15種類</p>
+                        <a href="biosimilar_medications.html" class="button primary">詳細を見る</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comparison" class="comparison-section">
+            <div class="container">
+                <h3>薬剤比較機能</h3>
+                <p>最大3つの治療薬を選択して詳細な比較ができます</p>
+                <div class="comparison-selectors">
+                    <select id="drug-select-1"><option value="">薬剤1を選択</option></select>
+                    <select id="drug-select-2"><option value="">薬剤2を選択</option></select>
+                    <select id="drug-select-3"><option value="">薬剤3を選択</option></select>
+                </div>
+                <button class="button primary" id="start-comparison-button">比較を開始</button>
+                <div id="comparison-table-container"></div>
+            </div>
+        </section>
+
+        <section id="guidelines" class="guidelines-section">
+            <div class="container">
+                <h3>乾癬ガイドライン</h3>
+                <p>乾癬治療に関する重要なガイドラインを確認できます</p>
+                <div class="guidelines-buttons">
+                    <a href="guideline-biological.html" class="button primary">
+                        乾癬における生物学的製剤の使用ガイダンス（2022年版）
+                    </a>
+                    <a href="guideline-psa.html" class="button primary">
+                        乾癬性関節炎診療ガイドライン2019
+                    </a>
+                    <a href="https://www.aad.org/member/clinical-quality/guidelines/psoriasis" class="button primary" target="_blank" rel="noopener noreferrer">
+                        米国皮膚科学会（AAD）乾癬ガイドライン
+                    </a>
+                    <a href="https://www.guidelines.edf.one/guidelines/psoriasis-guideline" class="button primary" target="_blank" rel="noopener noreferrer">
+                        欧州乾癬ガイドライン（EuroGuiDerm）
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="search-by-condition" class="search-by-condition-section">
+            <div class="container">
+                <div class="symptom-checker-card">
+                    <div class="symptom-checker-header">
+                        <div class="symptom-checker-icon"></div>
+                        <h3>患者症状確認表</h3>
+                        <div class="symptom-checker-badge">診断サポート</div>
+                    </div>
+                    <p class="symptom-checker-description">患者の症状や状態を体系的に確認し、最適な治療薬を見つけるための診断サポートツールです</p>
+                    
+                    
+                    <div class="symptom-checker-actions">
+                        <button class="button primary large" onclick="location.href='patient_symptom_checklist.html'">
+                            患者症状確認表を開始
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research-papers" class="research-papers-section">
+            <div class="container">
+                <div class="research-papers-card">
+                    <div class="research-papers-header">
+                        <div class="research-papers-icon"></div>
+                        <h3>医学論文情報</h3>
+                        <div class="research-papers-badge">エビデンス</div>
+                    </div>
+                    <p class="research-papers-description">乾癬治療に関する最新の医学論文を原文PDFと日本語翻訳で確認できます</p>
+                    
+                    <div class="research-papers-actions">
+                        <button class="button primary large" onclick="location.href='research_papers.html'">
+                            医学論文を確認
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h3>サイトについて</h3>
+                <p>本サイト「PsoriasisMed」は、乾癬治療薬に関する情報を医療従事者や患者様に分かりやすく提供することを目的としています。</p>
+                <p>掲載されている各薬剤の情報は、主に以下の資料を参考に作成しています。</p>
+                <ul>
+                    <li>各薬剤の添付文書</li>
+                    <li>各薬剤のインタビューフォーム</li>
+                    <li>各メーカーが公開している情報</li>
+                </ul>
+                <p>情報の正確性には細心の注意を払っておりますが、常に最新の情報を反映しているとは限りません。実際の治療に関しては、必ず医師にご相談ください。</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="number">20+</span>
+                        <span class="label">収録薬剤数</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">3</span>
+                        <span class="label">治療薬カテゴリー</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number">毎月</span>
+                        <span class="label">情報更新</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-logo">PsoriasisMed</div>
+                <div class="footer-nav">
+                    <h4>治療薬</h4>
+                    <ul>
+                        <li><a href="biological_agents.html">生物学的製剤</a></li>
+                        <li><a href="oral_medications.html">内服薬</a></li>
+                        <li><a href="topical_medications.html">外用薬</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>情報</h4>
+                    <ul>
+                        <li><a href="search.html">薬剤検索</a></li>
+                        <li><a href="#comparison">比較機能</a></li>
+                        <li><a href="patient_symptom_checklist.html">患者症状確認表</a></li>
+                        <li><a href="research_papers.html">医学論文情報</a></li>
+                        <li><a href="how_to_use.html">使い方</a></li>
+                        <li><a href="#about">サイト情報</a></li>
+                        <li><a href="#important-notice">免責事項</a></li>
+                        <li><a href="privacy_policy.html">プライバシーポリシー</a></li>
+                        <li><a href="terms_of_service.html">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 PsoriasisMed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="important-notice">
+        <div class="container">
+            <p>※本サイトの情報は医療従事者向けの参考情報です。実際の治療に関しては医師にご相談ください。</p>
+            <p>⚠️ 重要な注意事項</p>
+            <ul>
+                <li>医師判断の重要性: 本サイトの情報は参考資料であり、最終的な治療判断は医師が行ってください</li>
+                <li>最新情報の確認: 薬剤情報は定期的に更新されますが、最新の添付文書を必ずご確認ください</li>
+                <li>個別症例での判断: 患者様の個別の状態に応じた治療選択が必要です</li>
+                <li>エビデンスの解釈: 臨床試験結果は参考値であり、実臨床での効果を保証するものではありません</li>
+                <li>情報の責任: 本サイトの情報に基づく治療結果について、サイト運営者は責任を負いません</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

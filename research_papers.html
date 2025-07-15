@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医学論文情報 - PsoriasisMed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PsoriasisMed</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#hero">ホーム</a></li>
+                    <li><a href="index.html#categories">治療薬</a></li>
+                    <li><a href="index.html#comparison">薬剤比較</a></li>
+                    <li><a href="index.html#search-by-condition">症状確認表</a></li>
+                    <li><a href="index.html#about">サイトについて</a></li>
+                </ul>
+            </nav>
+            <div class="utility-nav">
+                <a href="search.html" class="search-icon">検索</a>
+                <a href="favorites.html" class="favorite-icon">お気に入り</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="research-papers-list" class="research-papers-list-section">
+            <div class="container">
+                <div class="page-header">
+                    <h1>医学論文情報</h1>
+                    <p>乾癬治療に関する最新の医学論文を原文PDFと日本語翻訳で確認できます</p>
+                </div>
+
+                <div class="papers-grid" id="papers-container">
+                    <!-- 論文カードがここに動的に生成されます -->
+                </div>
+
+                <div class="no-papers-message" id="no-papers-message" style="display: none;">
+                    <div class="empty-state">
+                        <div class="empty-icon">📚</div>
+                        <h3>論文を準備中です</h3>
+                        <p>現在、医学論文の準備を進めています。<br>
+                        PDFファイルは <code>research_papers/pdf/</code> フォルダに、<br>
+                        日本語翻訳は <code>research_papers/translations/</code> フォルダに格納してください。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container" style="text-align: center; margin-top: 40px;">
+            <a href="index.html#hero" class="button primary">Topへ戻る</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-logo">PsoriasisMed</div>
+                <div class="footer-nav">
+                    <h4>治療薬</h4>
+                    <ul>
+                        <li><a href="biological_agents.html">生物学的製剤</a></li>
+                        <li><a href="oral_medications.html">内服�a></li>
+                        <li><a href="topical_medications.html">外用薬</a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h4>情報</h4>
+                    <ul>
+                        <li><a href="search.html">薬剤検索</a></li>
+                        <li><a href="index.html#comparison">比較機能</a></li>
+                        <li><a href="patient_symptom_checklist.html">患者症状確認表</a></li>
+                        <li><a href="research_papers.html">医学論文情報</a></li>
+                        <li><a href="how_to_use.html">使い方</a></li>
+                        <li><a href="index.html#about">サイト情報</a></li>
+                        <li><a href="privacy_policy.html">プライバシーポリシー</a></li>
+                        <li><a href="terms_of_service.html">利用規約</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 PsoriasisMed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="research_papers_data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // 論文データを表示する関数
+        function displayResearchPapers() {
+            const container = document.getElementById('papers-container');
+            const noMessage = document.getElementById('no-papers-message');
+            
+            // 論文データが存在するかチェック
+            if (typeof researchPapersData === 'undefined' || !researchPapersData || researchPapersData.length === 0) {
+                container.style.display = 'none';
+                noMessage.style.display = 'block';
+                return;
+            }
+
+            container.innerHTML = '';
+            noMessage.style.display = 'none';
+
+            researchPapersData.forEach(paper => {
+                const paperCard = document.createElement('div');
+                paperCard.classList.add('paper-card');
+
+                paperCard.innerHTML = `
+                    <div class="paper-header">
+                        <h3>${paper.title}</h3>
+                        <div class="paper-badges">
+                            ${paper.journal ? `<span class="journal-badge">${paper.journal}</span>` : ''}
+                            ${paper.year ? `<span class="year-badge">${paper.year}</span>` : ''}
+                        </div>
+                    </div>
+                    <div class="paper-content">
+                        ${paper.authors ? `<p class="authors"><strong>著者:</strong> ${paper.authors}</p>` : ''}
+                        ${paper.abstract ? `<p class="abstract">${paper.abstract}</p>` : ''}
+                        ${paper.keywords ? `<p class="keywords"><strong>キーワード:</strong> ${paper.keywords}</p>` : ''}
+                    </div>
+                    <div class="paper-actions">
+                        ${paper.translation_url ? `<a href="${paper.translation_url}" class="button secondary">🌐 日本語翻訳</a>` : ''}
+                    </div>
+                `;
+
+                container.appendChild(paperCard);
+            });
+        }
+
+        // ページ読み込み時に論文を表示
+        document.addEventListener('DOMContentLoaded', function() {
+            displayResearchPapers();
+        });
+    </script>
+</body>
+</html>
